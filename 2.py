@@ -30,4 +30,3 @@ def to_list(input_):
 if __name__ == "__main__":
     import doctest
     doctest.testmod()
-
