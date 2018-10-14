@@ -1,5 +1,7 @@
 def to_list(input_):
     """
+    # Beyond simple code exercises would not use docstrings for 
+    # testing.
     >>> to_list([1, 2, 3])
     ['1', '2', '3']
 
