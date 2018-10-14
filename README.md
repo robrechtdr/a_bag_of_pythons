@@ -61,7 +61,7 @@
 
 > Solutions were tested with Python 2.7+
 
-1. You can use the [django-simple-history](https://django-simple-history.readthedocs.io/en/latest/usage.html#querying-history) and [django-audit-log](https://django-audit-log.readthedocs.io/en/latest/change_tracking.html#tracking-users-that-created-modified-a-model)` django libraries to achieve this quickly and cleanly:
+1. You can use the [django-simple-history](https://django-simple-history.readthedocs.io/en/latest/usage.html#querying-history) and [django-audit-log](https://django-audit-log.readthedocs.io/en/latest/change_tracking.html#tracking-users-that-created-modified-a-model) libraries to achieve this quickly and cleanly:
 
     ```
     # Assumes libs are correctly set up
@@ -71,7 +71,7 @@
 
     # Base for each of our models to inherit from.
     # django_extentions' TimeStampedModel should not be necessary as it looks 
-    # already tracked by simple_history. 
+    # like created and modified times are already tracked by simple_history. 
     class TrackedModel(AuthStampedModel):
         history = HistoricalRecords()
 
